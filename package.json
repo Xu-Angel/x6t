@@ -8,6 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@antv/x6": "^1.21.7",
+    "@antv/x6-vue-shape": "^1.2.4",
+    "@vue/composition-api": "^1.0.0-rc.9",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -22,13 +25,14 @@
   },
   "eslintConfig": {
     "root": true,
+    "ignorePatterns": [
+      "*.vue",
+      "*.js"
+    ],
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
+    "extends": [],
     "parserOptions": {
       "parser": "babel-eslint"
     },
